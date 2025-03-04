@@ -290,11 +290,47 @@ header>.sections>p, header>.sections>a{
     /* text-align: center; */
 }
 .content-page>.influenction>.content-btn>.btn>p{
-    margin: 10%;
+    margin: 14%;
     text-align: justify;
     font-size: 1.3rem;
     font-family: 'Belanosima';
     color: #ffffff;
+}
+.content-page>.locale{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content-page>.locale>a{
+    text-decoration: none;
+    width: 80%;
+    height: calc(100vh - 20rem);
+}
+.content-page>.locale>a>.content-locale{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: url("/img/sedecti-sede.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    display: flex;
+    align-items: end;
+}
+.content-page>.locale>a>.content-locale>.content-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content-page>.locale>a>.content-locale>.content-text>p{
+    font-family: 'Belanosima';
+    font-weight: 400;
+    font-size: calc(2.5rem - 50%);
+    color: #000000;
+    margin: 0 2%;
 }
 /* fim influenction */
 /* animation */
