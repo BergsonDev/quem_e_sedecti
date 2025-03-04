@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header style="display: none;">
         <div class="img-sedecti">
             <img src="https://www.sedecti.am.gov.br/wp-content/uploads/2020/09/cropped-brasao-gov-192x192.png" alt="Logo do Estado">
         </div>
@@ -30,7 +30,10 @@
             <a href="/document">Pesquisa</a>
         </nav>
     </header>
-    <div class="content-page">
+    <div class="load">
+        <p>Carregando</p>
+    </div>
+    <div class="content-page" style="display: none;">
         <div class="intro">
             <div class="video-background">
                 <video src="Expedicão Amazônia Teaser - Imersão na Floresta Amazônica - 4k.mp4" autoplay loop muted></video>
@@ -147,7 +150,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer style="display: none;">
         <div class="sedecti">
             <a href="https://www.sedecti.am.gov.br/">
                 <p>Secretaria de Estado de Desenvolvimento, Econ&ocirc;mico, Ci&ecirc;ncia, Tecnologia e Inova&ccedil;&atilde;o</p>
@@ -164,5 +167,6 @@
             </a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
