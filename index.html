@@ -21,11 +21,17 @@
         <div class="img-sedecti">
             <img src="https://www.sedecti.am.gov.br/wp-content/uploads/2020/09/cropped-brasao-gov-192x192.png" alt="Logo do Estado">
         </div>
+        <div class="menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
         <nav class="sections">
-            <p>Fun&ccedil;&atilde;o</p>
-            <p>Influ&ecirc;ncia e &aacute;reas atuantes</p>
-            <p>Localidade</p>
-            <p>Premia&ccedil;&otilde;es</p>
+            <div class="close">
+                    <p id="exit"><ion-icon name="close-circle-outline"></ion-icon></p>
+            </div>
+            <a href="#Function">Fun&ccedil;&atilde;o</a>
+            <a href="#Influencia">Influ&ecirc;ncia e &aacute;reas atuantes</a>
+            <a href="#Localidade">Localidade</a>
+            <a href="#Premiacao">Premia&ccedil;&otilde;es</a>
             <a href="/making-off/">Projeto</a>
             <a href="/document">Pesquisa</a>
         </nav>
@@ -44,17 +50,17 @@
         </div>
         <div class="intro2">
             <div class="content">
-                <div class="content-paragraph">
+                <div class="content-paragraph" id="paragraph-intro">
                     <p>
                         Secretaria de Estado de Desenvolvimento Econômico, Ciência, Tecnologia e Inovação (SEDECTI), é um órgão governamental idealizado e realizado para atender políticas públicas e prover avanços econômicos para o estado. A SEDECTI possui atuações nos setores diversos de acordo com o estado atuante, entretanto apresenta-se o qual vive o povo amazonense, a SEDECTI no estado do Amazonas. 
                     </p>
                 </div>
-                <div class="content-img">
+                <div class="content-img" id="img-intro">
                     <img src="img/manaus-cima-1.jpeg" alt="">
                 </div>
             </div>
         </div>
-        <div class="functions">
+        <div class="functions" id="Function">
             <div class="title">
                 <p>Fun&ccedil;&atilde;o</p>
             </div>
@@ -84,14 +90,14 @@
                 </div>
             <!-- </div> -->
         </div>
-        <div class="influenction">
+        <div class="influenction" id="Influencia">
             <div class="title">
                 <p>Influ&ecirc;ncia e &aacute;reas atuantes</p>
             </div>
             <div class="content-img-title" id="content1">
                 <div class="content-text">
                     <p>
-                        A SEDECTI influencia pontos na qual contribui para o desenvolvimento da economia do estado do Amazonas. Sua influência se encontra no âmbito: social, política, desenvolvimento e econômica. 
+                        A SEDECTI influencia pontos na qual contribui para o desenvolvimento da economia do estado do Amazonas. Sua influência se encontra no âmbito: social, política, desenvolvimento e economia. 
                     </p>
                 </div>
             </div>
@@ -116,7 +122,7 @@
                     </p>
                 </div>
             </div>
-            <div class="content-btn">
+            <div class="content-btn" id="btn-more">
                 <a href="https://www.sedecti.am.gov.br/" class="btn">
                     <p>
                         Você pode contribuir como investidor ou fazer parte do mesmo, entretanto aprofunde-se ainda mais para o mesmo.  Clique aqui para mais !
@@ -124,12 +130,12 @@
                 </a>
             </div>
         </div>
-        <div class="locale">
+        <div class="locale" id="Localidade">
             <div class="title">
                 <p>Localidade</p>
             </div>
             <a href="https://maps.app.goo.gl/oqhqJ7jwuqcVik897">
-                <div class="content-locale">
+                <div class="content-locale" id="locale-content">
                     <div class="content-text">
                         <p>Av. Urucará, 595 - Cachoeirinha, Manaus - AM, 69065-180</p>
                         <p>Clique para ir ao mapa!</p>
@@ -137,11 +143,11 @@
                 </div>
             </a>
         </div>
-        <div class="records">
+        <div class="records" id="Premiacao">
             <div class="title">
                 <p>Premia&ccedil;&otilde;es</p>
             </div>
-            <div class="card">
+            <div class="card" id="record-content">
                 <div class="box-text">
                     <p>
                         A Secretaria Executiva do Trabalho e Empreendedorismo (Setemp), vinculada à Secretaria de Estado de Desenvolvimento Econômico, Ciência, Tecnologia e Inovação (Sedecti), recebeu, na noite de sexta-feira (22/11), o troféu de prata no Prêmio Qualidade Amazonas (PQA) 2024, com o projeto “Mostra do Artesanato e Economia Solidária”. A premiação aconteceu no Diamond Convention Center. O objetivo do projeto foi a implementação de melhorias na organização da mostra de artesanato realizada em Parintins, durante o festival folclórico dos bois-bumbás. 
@@ -167,6 +173,9 @@
             </a>
         </div>
     </footer>
+    
     <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
