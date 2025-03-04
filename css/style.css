@@ -1,0 +1,255 @@
+:root{
+    --background-page: #465902;
+    --color-section: #ffffff; 
+    --color-title-section: #BF9E75;  
+    --box-text: #1e260180;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--background-page);
+}
+/* header */
+header{
+    /* background-color: rebeccapurple; */
+    /* position: static; */
+    background: transparent;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* z-index: 5; */
+    /* background-color: ; */
+}
+header>.img-sedecti{
+    width: 7rem;
+    height: 7rem;
+    /* background-color: black; */
+}
+header>.img-sedecti>img{
+    height: 100%;
+    width: 100%;
+}
+header>.sections{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 0 2rem;
+    /* background-color: #04BFAD; */
+    /* bac */
+}
+header>.sections>p,a{
+    color: var(--color-section);
+    margin: 0 15px;
+    font-family: 'AbeeZee';
+    font-size: calc(2rem - 40%);
+    cursor: pointer;
+    text-shadow: 0 2px 5px #000000;
+    text-decoration: none;
+}
+/* fim header */
+/* content-page */
+.content-page{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+/* intro */
+.content-page>.intro{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: rebeccapurple; */
+}
+.content-page>.intro>.video-background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+}
+.content-page>.intro>.video-background>video{
+    width: 120rem;
+    height: auto;
+    
+}
+.content-page>.intro>.content-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.content-page>.intro>.content-title>h1{
+    color: #ffffff;
+    font-family: 'Belanosima';
+    font-size: calc(5rem - 100%);
+    text-align: center;
+    font-weight: 500;
+    font-style: 0;
+    background-image: linear-gradient(to right, #F2F2F2, #04BFAD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content-page>.intro2{
+    width: 100%;
+    height: auto;
+    /* background-color: #000000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-page>.intro2>.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* background-color: rebeccapurple; */
+}
+.content-page>.intro2>.content>.content-paragraph{
+    width: 50rem;
+    height: auto;
+    /* background-color: red; */
+    padding: 5%;
+
+}
+.content-page>.intro2>.content>.content-paragraph>p{
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    font-family: 'Belanosima';
+    font-size: calc(2.5rem - 40%);
+    text-align:justify ;
+}
+.content-page>.intro2>.content>.content-img{
+    width: 58rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    /* padding: 4rem; */
+    
+}
+.content-page>.intro2>.content>.content-img>img{
+    width: 100%;
+    height: 100%;
+}
+/* fim intro */
+.title{
+    color: var(--color-title-section);
+    font-family: 'Belanosima';
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(5rem - 50%);
+    text-align: center;
+    text-shadow: 0 3px 5px #000000;
+}
+/* function */
+.content-page>.functions{
+    width: 100%;
+    height: auto;
+    margin: 0 0 10rem 0;
+}
+.content-page>.functions>.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content-page>.functions>.cards>.card{
+    position: relative;
+    margin: 2%;
+    width: 25rem;
+    height: 30rem;
+    /* background-color: rebeccapurple; */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 100%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px 0px  #1E2601;
+}
+#card1{
+    background-image: url("https://img.portalmarcossantos.com.br/wp-content/uploads/2025/02/17141731/Sedecti-certifica-profissionais-para-ampliar-disponibilizacao-de-Dados-Abertos-no-Amazonas.jpg");
+}
+#card2{
+    background-image: url("https://s2-g1.glbimg.com/SuFxLc7B4Y8cZvCSbNA9AJWzhVg=/0x0:768x512/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/A/1/kRYuQ4TeauM3A1nsjuzA/amazonas-bate-recorde-de-importacoes-em-2024-indica-sedecti-foto-bruno-leao-sedecti.jpeg") ;
+}
+#card3{
+    background-image: url("https://amazoniareal.com.br/wp-content/uploads/2023/12/PIM-MANAUS-3-slide.jpg");
+}
+.content-page>.functions>.cards>.card>.box-text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: var(--box-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 9px 9px;
+    /* padding: 0 1%; */
+}
+.content-page>.functions>.cards>.card>.box-text>p{
+    font-family: 'Belanosima';
+    color: #ffffff;
+    margin: 0 5%; 
+    font-size: calc(2rem - 55%);
+    text-align: justify;
+    /* background-color: rebeccapurple; */
+}
+/* fim function */
+/* influenction */
+.content-page>.influenction{
+    width: 100%;
+    height: auto;
+}
+.content-page>.influenction>.content-img-title{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://as1.ftcdn.net/v2/jpg/03/71/68/12/1000_F_371681270_IbuKM3xiQ2ZcqrwNzQGGwFHk6QZPZhzi.jpg");
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.content-page>.influenction>.content-img-title>.content-text{
+    width: 50%;
+    height: auto;
+    background-color: rgb(30, 38, 1, 50%);
+    /* padding: 0 5%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #00000059; */
+}
+.content-page>.influenction>.content-img-title>.content-text>p{
+    color: #ffffff;
+    /* background-color: #04BFAD; */
+    margin: 20%;
+    font-family: 'Belanosima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(2.5rem - 70%);
+    text-align: justify;
+}
+/* fim influenction */
+/* animation */
+/* fim animation */
