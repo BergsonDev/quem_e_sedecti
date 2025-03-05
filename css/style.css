@@ -284,7 +284,7 @@ header>.sections>a{
     background-image: url("https://classic.exame.com/wp-content/uploads/2019/07/zona-franca-suframa-reproduc3a7ao.jpg?quality=70&strip=info&w=1000");
 }
 #content4{
-    background-image: url("/img/amazonasmapa.png");
+    background-image: url("../img/amazonasmapa.png");
 }
 .content-page>.influenction>.content-btn{
     width: 100%;
