@@ -35,10 +35,10 @@ window.addEventListener("scroll",(event=>{
     let topico12animation = content12.getBoundingClientRect().top;
 
     if (topico1animation <= window.innerHeight) {
-      content1.classList.add("slide-in-blurred-left")
+      content1.classList.add("slide-in-blurred-bottom")
     }
     if (topico2animation <= window.innerHeight) {
-      content2.classList.add("slide-in-blurred-right")
+      content2.classList.add("slide-in-blurred-bottom")
     }
     if (topico3animation <= window.innerHeight) {
       content3.classList.add("slide-in-elliptic-bottom-fwd")
@@ -50,25 +50,25 @@ window.addEventListener("scroll",(event=>{
       content5.classList.add("slide-in-elliptic-bottom-fwd-atraso2")
     }
     if (topico6animation <= window.innerHeight) {
-      content6.classList.add("slide-in-blurred-left")
+      content6.classList.add("slide-in-blurred-bottom")
     }
     if (topico7animation <= window.innerHeight) {
-      content7.classList.add("slide-in-blurred-right")
+      content7.classList.add("slide-in-blurred-bottom")
     }
     if (topico8animation <= window.innerHeight) {
-      content8.classList.add("slide-in-blurred-left")
+      content8.classList.add("slide-in-blurred-bottom")
     }
     if (topico9animation <= window.innerHeight) {
-      content9.classList.add("slide-in-blurred-right")
+      content9.classList.add("slide-in-blurred-bottom")
     }
     if (topico10animation <= window.innerHeight) {
-      content10.classList.add("slide-in-blurred-top")
+      content10.classList.add("slide-in-blurred-bottom")
     }
     if (topico11animation <= window.innerHeight) {
       content11.classList.add("slide-in-blurred-bottom")
     }
     if (topico12animation <= window.innerHeight) {
-      content12.classList.add("slide-in-blurred-top")
+      content12.classList.add("slide-in-blurred-bottom")
     }
 
     return
