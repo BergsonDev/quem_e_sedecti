@@ -105,23 +105,44 @@ document.querySelector("#exit").addEventListener("click", () => {
 
 // fechando o menu quando clicar nas seções
 document.querySelector(".sections").childNodes.forEach(a => {
-    a.addEventListener("click", () =>{
-        if (a.classList != "")
-            return
+  a.addEventListener("click", () =>{
+      if (a.classList != "" || window.innerWidth >= 1415)
+          return
 
-        let menu = document.querySelector(".sections");
-        if(menu.classList.contains("slide-in-right")){
-            menu.classList.remove("slide-in-right");
-        }
+      let menu = document.querySelector(".sections");
+      if(menu.classList.contains("slide-in-right")){
+          menu.classList.remove("slide-in-right");
+      }
     
-        menu.classList.add("slide-out-right");
-        let interval = setInterval(() =>{
-            let view = document.querySelector(".sections").style.display == "flex" ? "none" : "flex";
-            document.querySelector(".sections").style.display = view;
-            clearInterval(interval);
-        }, 600)
-        
-        return
-    })
-
+      menu.classList.add("slide-out-right");
+      let interval = setInterval(() =>{
+          let view = document.querySelector(".sections").style.display == "flex" ? "none" : "flex";
+          document.querySelector(".sections").style.display = view;
+          clearInterval(interval);
+      }, 600)
+      
+      return
+  })
 });
+
+window.addEventListener("resize",()=>{
+  if(window.innerWidth >= 1415){
+    if (document.querySelector(".sections").style.display = "none") {
+      document.querySelector(".sections").style.display = "flex"
+    }
+    if (document.querySelector(".sections").classList.contains("slide-in-right")) {
+      document.querySelector(".sections").classList.remove("slide-in-right");
+    }
+    if (document.querySelector(".sections").classList.contains("slide-out-right")) {
+      document.querySelector(".sections").classList.remove("slide-out-right")
+    }
+    return;
+  }
+  if(document.querySelector(".sections").style.display = "flex") {
+    document.querySelector(".sections").style.display = "none"
+  }
+  if (!document.querySelector(".sections").classList.contains("slide-out-right")) {
+    document.querySelector(".sections").classList.add("slide-out-right")
+  }
+  return;
+})
