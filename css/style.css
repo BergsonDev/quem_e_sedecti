@@ -79,6 +79,24 @@ header>.sections>a{
     transition: .5s;
 }
 /* fim header */
+/* load */
+.load{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load>p{
+    font-family: 'Belanosima';
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #BF9E75;
+    text-align: justify;
+    padding: 10%;
+}
+/* fim load */
 /* content-page */
 .content-page{
     width: 100%;
